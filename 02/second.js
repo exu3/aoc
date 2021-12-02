@@ -19,22 +19,17 @@ function move() {
     if (direction == "forward") {
       y += aim * units;
       x += units;
-      console.log("depth is " + y);
     } else if (direction == "up") {
       //   y -= units;
       aim -= units;
-      console.log("depth is " + y);
     } else if (direction == "down") {
       //   y += units;
       aim += units;
-      console.log("depth " + y);
     } else {
       console.log("hmmmm idk");
     }
   }
 
-  console.log(x);
-  console.log(y);
   console.log(x * y);
 }
 
