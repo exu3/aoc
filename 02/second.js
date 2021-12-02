@@ -8,8 +8,8 @@ let aim = 0;
 const nestedArr = [];
 
 for (let j = 0; j < input.length; j++) {
-  let object = input[j].split(" ");
-  nestedArr.push(object);
+  let sm = input[j].split(" ");
+  nestedArr.push(sm);
 }
 
 function move() {
