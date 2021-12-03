@@ -7,6 +7,9 @@ let oneCounter = 0;
 let arrayG = [];
 let arrayE = [];
 
+let arrayO = [];
+let arrayC = [];
+
 function Gamma() {
   for (let bitIndex = 0; bitIndex < input[0].length; bitIndex++) {
     // console.log("calculating bit index" + bitIndex);
@@ -37,6 +40,25 @@ function Gamma() {
   console.log("epsilon", arrayE.join(""));
 
   console.log("final answer (gamma * epsilon): " + gammaResult * epsilonResult);
+
+  function Oxygen() {
+    for (let valueIndex = 0; valueIndex < input.length; valueIndex++) {
+      for (let bitIndex = 0; bitIndex < input[0].length; bitIndex++) {
+        for (let m = 0; m < arrayG.length; m++) {
+          let commonValue = parseInt(arrayG[m]);
+
+          if (parseInt(input[valueIndex][bitIndex]) != commonValue) {
+            input.splice(valueIndex, 1);
+            console.log(input);
+          } else {
+            console.log("No change, but here's the array: " + input);
+          }
+        }
+      }
+    }
+    console.log(input);
+  }
+  Oxygen();
 }
 
 Gamma();
