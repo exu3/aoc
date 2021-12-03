@@ -1,8 +1,9 @@
 const fs = require("fs");
 const input = fs.readFileSync("input.txt", "utf8").split("\n");
 
-// let valueIndex = 0;
-// let bitIndex = 0;
+let o2 = 0;
+let co2 = 0;
+let life = 0;
 
 let zeroCounter = 0;
 let oneCounter = 0;
