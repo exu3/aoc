@@ -42,12 +42,13 @@ function Gamma() {
   console.log("final answer (gamma * epsilon): " + gammaResult * epsilonResult);
 
   function Oxygen() {
-    for (let valueIndex = 0; valueIndex < input.length; valueIndex++) {
+    for (let valueIndex = 0; valueIndex < input.length - 1; valueIndex++) {
       for (let bitIndex = 0; bitIndex < input[0].length; bitIndex++) {
         for (let m = 0; m < arrayG.length; m++) {
           let commonValue = parseInt(arrayG[m]);
 
           if (parseInt(input[valueIndex][bitIndex]) != commonValue) {
+            // errors here for some reason ^^^
             input.splice(valueIndex, 1);
             console.log(input);
           } else {
