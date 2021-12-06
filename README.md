@@ -7,5 +7,5 @@ My AoC solutions for 2021. Code of questionable quality.
 | 1 | Java |
 | 2 | JavaScript |
 | 3 | JavaScript |
-| 5 |  |
+| 4 |  |
 
